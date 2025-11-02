@@ -10,7 +10,7 @@ import {
 import AnimatedStatsCard from '../AnimatedStatsCard';
 import VideoCarousel from '../components/VideoCarousel';
 import ImageCarousel from '../components/ImageCarousel';
-import Footer from '../components/Footer';
+import Footer from '../components.Footer';
 
 interface Video {
   id: number;
@@ -73,7 +73,8 @@ const HomePage: React.FC<HomePageProps> = ({
           </div>
 
           {/* Right Side - NEW AESTHETIC: Cascading Glass Cards */}
-          <div className="md:col-span-2 mt-12 sm:mt-16 flex flex-col md:flex-row gap-4 items-start justify-center">
+          {/* CHANGED: Added 'items-center' for mobile and 'md:items-start' for desktop */}
+          <div className="md:col-span-2 mt-12 sm:mt-16 flex flex-col items-center md:flex-row md:items-start gap-4 justify-center">
 
             {/* Card 1: Time */}
             <div className="w-44 h-32 sm:w-48 sm:h-36 bg-white/30 backdrop-blur-sm border border-white/20 rounded-xl shadow-lg p-4 flex flex-col justify-between transition-all duration-300 hover:scale-105 hover:shadow-2xl cursor-pointer -rotate-3">
@@ -119,7 +120,6 @@ const HomePage: React.FC<HomePageProps> = ({
 
 
         {/* Video Ads Carousel */}
-        {/* CHANGED: Swapped max-w-5xl for max-w-7xl */}
         <div className="w-full max-w-7xl mx-auto mb-8">
           <div className="text-center mb-6">
             <h2 className="text-xl sm:text-2xl font-bold text-black mb-2">Video Ads</h2>
@@ -129,7 +129,6 @@ const HomePage: React.FC<HomePageProps> = ({
         </div>
 
         {/* Static Ads Carousel */}
-        {/* CHANGED: Swapped max-w-5xl for max-w-7xl */}
         <div className="w-full max-w-7xl mx-auto mb-16">
           <div className="text-center mb-6">
             <h2 className="text-xl sm:text-2xl font-bold text-black mb-2">Static Ads</h2>
@@ -169,3 +168,4 @@ const HomePage: React.FC<HomePageProps> = ({
 };
 
 export default HomePage;
+
