@@ -90,7 +90,7 @@ const HomePage: React.FC<HomePageProps> = ({
               <DollarSign className="w-6 h-6 text-black/70" />
               <div>
                 <div className="text-2xl sm:text-3xl font-bold text-black">1/20th</div>
-                <div className="text-sm font-medium text-black/70">Cost</div>
+                <div className="text-sm font-medium text-black/70">Cost with Scalability</div>
               </div>
             </div>
 
