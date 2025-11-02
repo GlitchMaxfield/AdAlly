@@ -4,7 +4,6 @@ import Navigation from "./components/Navigation";
 import VideoModal from "./components/VideoModal";
 import ImageModal from "./components/ImageModal";
 import AuthModal from "./components/auth/AuthModal";
-import LiveChat from "./components/LiveChat";
 import HomePage from "./pages/HomePage";
 import PortfolioPage from "./pages/PortfolioPage";
 import AboutPage from "./pages/AboutPage";
@@ -310,9 +309,6 @@ function AppContent() {
         onClose={() => setIsAuthModalOpen(false)}
         initialMode={authMode}
       />
-
-      {/* Live Chat Widget */}
-      <LiveChat />
     </div>
   );
 }

@@ -5,7 +5,6 @@ import ChatAgent from '../components/dashboard/ChatAgent';
 import Downloads from '../components/dashboard/Downloads';
 import UserProfile from '../components/dashboard/UserProfile';
 import AdminPanel from '../components/dashboard/AdminPanel';
-import LiveChatAdmin from '../components/dashboard/LiveChatAdmin';
 import { useAuth } from '../contexts/AuthContext';
 
 const DashboardPage: React.FC = () => {
@@ -32,8 +31,6 @@ const DashboardPage: React.FC = () => {
         return <Downloads />;
       case 'profile':
         return <UserProfile />;
-      case 'live-chat':
-        return <LiveChatAdmin />;
       case 'admin':
         return <AdminPanel />;
       default:
