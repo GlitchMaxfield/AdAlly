@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { LogOut, User, Package, MessageCircle, Download, Menu, X, Crown, Settings, MessageSquare } from 'lucide-react';
+import { LogOut, User, Package, MessageCircle, Download, Menu, X, Crown, Settings } from 'lucide-react';
 import { useAuth } from '../../contexts/AuthContext';
 import { supabase } from '../../lib/supabase';
 
@@ -27,9 +27,7 @@ const DashboardLayout: React.FC<DashboardLayoutProps> = ({ children, activeTab, 
     { id: 'profile', label: 'Profile', icon: User },
   ];
 
-  const adminTabs = [{ id: 'live-chat', label: 'Live Chat', icon: MessageSquare }, { id: 'admin', label: 'Admin Panel', icon: Settings }];
-
-  const tabs = isAdmin ? [...baseTabs, ...adminTabs] : baseTabs;
+  const tabs = isAdmin ? [...baseTabs, { id: 'admin', label: 'Admin Panel', icon: Settings }] : baseTabs;
 
   useEffect(() => {
     if (user) {
