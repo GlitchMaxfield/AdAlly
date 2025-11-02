@@ -10,7 +10,7 @@ import {
 import AnimatedStatsCard from '../AnimatedStatsCard';
 import VideoCarousel from '../components/VideoCarousel';
 import ImageCarousel from '../components/ImageCarousel';
-import Footer from '../components.Footer';
+import Footer from '../components/Footer';
 
 interface Video {
   id: number;
@@ -169,4 +169,3 @@ const HomePage: React.FC<HomePageProps> = ({
 
 export default HomePage;
 
- 
