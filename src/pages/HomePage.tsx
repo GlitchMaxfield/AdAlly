@@ -81,7 +81,7 @@ const HomePage: React.FC<HomePageProps> = ({
               <FastForward className="w-6 h-6 text-black/70" />
               <div>
                 <div className="text-2xl sm:text-3xl font-bold text-black">1/10th</div>
-                <div className="text-sm font-medium text-black/70">Time</div>
+                <div className="text-sm font-medium text-black/70">Production Time</div>
               </div>
             </div>
 
@@ -99,7 +99,7 @@ const HomePage: React.FC<HomePageProps> = ({
               <TrendingUp className="w-6 h-6 text-black/70" />
               <div>
                 <div className="text-2xl sm:text-3xl font-bold text-black">5X</div>
-                <div className="text-sm font-medium text-black/70">Engagement</div>
+                <div className="text-sm font-medium text-black/70">Engagement Rate</div>
               </div>
             </div>
             
